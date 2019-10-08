@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9</title>
+</head>
+<body>
+<script>
+    arr = [];
+    for (i = 0; i < 10; i++) {
+        arr[i] = prompt('Nhập ký tự:');
+    }
+    let count = 0;
+    let kytu = prompt('Nhập vào ký tự tìm kiếm:');
+    result = test();
+    console.log(result);
+    function test() {
+        if (arr.indexOf(kytu) == -1) {
+            return -1;
+        } else {
+            for (i = 0; i < 10; i++) {
+                if (kytu == arr[i]) {
+                    count++;
+                }
+            }
+            return count;
+        }
+    }
+</script>
+</body>
+</html>

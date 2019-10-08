@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<script>
+    let pi = 3.14;
+    let bankinh = parseInt(prompt('Nhập vài bán kính hình tròn:'));
+    dientich = tinhdientich(bankinh);
+    chuvi = tinhchuvi(bankinh);
+    document.write('Diện tích là: ' + dientich + '<br/>');
+    document.write('Chu vi là: ' + chuvi + '<br/>');
+
+    function tinhdientich(a) {
+        return a * a * pi;
+    }
+
+    function tinhchuvi(a) {
+        return 2 * a * pi;
+    }
+
+</script>
+</body>
+</html>
